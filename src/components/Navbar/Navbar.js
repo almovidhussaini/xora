@@ -3,7 +3,7 @@ import React ,{useEffect, useState} from 'react';
 // import { useAccount } from "wagmi";
 import { AiOutlineClose, AiOutlineConsoleSql } from "react-icons/ai";
 import { Button, Modal, Form } from "react-bootstrap";
-import LoadingOverlay from "react-loading-overlay";
+
 
 const Navbar=()=> {
 
