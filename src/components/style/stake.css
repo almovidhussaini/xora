@@ -1,0 +1,3 @@
+.input-custom::placeholder {
+    color: blue !important; /* Change placeholder color to blue */
+  }
