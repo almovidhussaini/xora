@@ -43,6 +43,7 @@ const Ico = () => {
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.05)",
             borderRadius: "20px",
+             border: "1px solid #F2946D"
           }}
         >
           <h5 className="mb-5">Buy Token</h5>
@@ -97,6 +98,7 @@ const Ico = () => {
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.05)",
             borderRadius: "20px",
+            border: "1px solid #F2946D"
           }}
         >
           <h5 className="mb-5">Withdraw</h5>

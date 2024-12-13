@@ -1,0 +1,17 @@
+.custom-shape {
+    height: 100px;
+    background-color: rgba(255, 255, 255, 0.07); /* Removed quotes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #F2946D;
+    clip-path: polygon(100% 0, 100% 51%, 77% 100%, 0 100%, 0 0); /* Custom polygon shape */
+  }
+  .custom-shape h2 {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+  }
+  

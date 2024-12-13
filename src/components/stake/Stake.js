@@ -18,6 +18,7 @@ const Stake = () => {
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.05)",
             borderRadius: "20px",
+            border: "1px solid #F2946D"
           }}
         >
           <div className="row">

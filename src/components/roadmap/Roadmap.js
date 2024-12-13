@@ -42,7 +42,7 @@ const Roadmap = () => {
                 style={{
                   padding: "1rem",
                   backgroundColor: "#111436",
-                  border: "1px solid rgba(255,255,255,0.2)",
+                  border: "1px solid #F2946D",
                   borderRadius: "10px",
                   marginBottom: "1rem",
                   zIndex: 2,
