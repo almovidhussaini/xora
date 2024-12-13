@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { Modal } from "react-bootstrap";
 import { useConnect, useAccount } from "wagmi";
+import { Link } from 'react-router-dom';
 // import LoadingOverlay from 'react-loading-overlay'
 import "../style/navbar.css";
 
@@ -76,9 +77,9 @@ const Navbar = () => {
           {/* Navigation Links */}
           <ul className="navbar-nav mx-auto">
             <li className="nav-item" style={{ marginRight: "3rem" }}>
-              <a className="nav-link text-white" href="#home">
-                Home
-              </a>
+            <Link className="nav-link text-white" to="/">
+            Home
+          </Link>
             </li>
             <li className="nav-item" style={{ marginRight: "3rem" }}>
               <a className="nav-link text-white" href="#about">
