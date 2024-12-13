@@ -1,5 +1,5 @@
 .input-custom::placeholder {
-    color: blue !important; /* Change placeholder color to blue */
+    color: #B7D869 !important; /* Change placeholder color to blue */
   }
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {

@@ -1,0 +1,46 @@
+.modal-header{
+    background-color: #0a0d24;
+    color:white
+}
+.modal-body{
+    /* background-color: #0B0F2E; */
+    background-color: #0a0d24;
+    color:white;
+    padding: 2rem 0;
+    
+}
+.close-button{
+  background-color: #0B0F2E;
+  color:white;
+  border:none;
+  
+}
+
+.modal-header .close {
+    color: white; /* Sets the close button color to white */
+    opacity: 1;   /* Ensures the button is fully visible */
+  }
+  
+  /* Optional: Remove the default background shadow effect */
+  .modal-header .close:hover,
+  .modal-header .close:focus {
+    color: white; /* Sets the color to white when hovered or focused */
+    background-color: transparent; /* Remove background color when hovered or focused */
+  }
+
+  .walletButton{
+    position: absolute;
+    top: 50%;
+    right: 80px;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 992px) {
+    .walletButton {
+      position: static; 
+      right: auto; 
+      transform: none; 
+      /* margin-left: auto;  */
+      /* margin-right: auto; */
+    }
+  }

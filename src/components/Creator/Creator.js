@@ -1,63 +1,36 @@
 import React from "react";
 import CreatorProfile from "./CreatorProfile";
+import image1 from '../../assets/team/h2_team_img02.jpg'
+import shahalmoved from '../../assets/team/shah.PNG'
+import khurshid from '../../assets/team/kurshid.PNG'
+import Zubair from '../../assets/team/zubair.PNG'
 
 const Creator = () => {
   const creators = [
     {
-      image: "path to image",
-      name: "example",
-      eth: "3.2 Eth",
+      image: image1,
+      name: "Ibtesam Asif",
+      role: "Project Manager",
       follow: "follow",
     },
     {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      },
-      {
-        image: "path to image",
-        name: "example",
-        eth: "3.2 Eth",
-        follow: "follow",
-      }
-   
+      image: shahalmoved,
+      name: "Shah Almoveed",
+      role: "Web3 developer",
+      follow: "follow",
+    },
+    {
+      image: khurshid,
+      name: "Khurshid Islam",
+      role: "UX/UI designer",
+      follow: "follow",
+    },
+    {
+      image: Zubair,
+      name: "Zubair Ahmad",
+      role: "Marketing",
+      follow: "follow",
+    }
   ];
   return (
     <div
@@ -76,7 +49,7 @@ const Creator = () => {
               key={index}
               img={creator.image}
               name={creator.name}
-              eth={creator.eth}
+              role={creator.role}
               follow={creator.follow}
             />
           ))}

@@ -1,26 +1,22 @@
-const CreatorProfile = ({ img, name, eth, follow }) => {
-  console.log(img, name, eth, follow); // This will show the correct values now
+const CreatorProfile = ({ img, name, role, follow }) => {
   return (
-    <div className="col-md-3 m-3" style={{ backgroundColor: "rgba(255, 255, 255, 0.05)" , borderRadius:'10px'}}>
-      {/* <img src={img} alt={name} />
-            <h3>{name}</h3>
-            <p>{eth} ETH</p>
-            <p>{follow} Followers</p> */}
+    <div className="col-md-5 m-2" style={{ backgroundColor: "rgba(255, 255, 255, 0.05)" , borderRadius:'10px'}}>
       <div className="row d-flex align-items-center">
-        <div className="col-auto">
+        <div className="col-3 col-md-4 ">
           <img
             src={img}
             alt="img"
-            style={{ width: "50px", height: "50px", objectFit: "cover" }}
+            style={{ width: "100px", height: "100px", borderRadius:'50%'}}
           />
+          
         </div>
-        <div className="col">
-          <h4>{name}</h4>
-          <p>{eth}</p>
+        <div className="col-6 col-md-4  align-item-center justify-content-center" >
+          <p className="pt-3">{name}</p>
+          <p style={{ marginTop: "-15px" }}>{role}</p>
         </div>
-        <div className="col-auto">
+        <div className="col-3 col-md-4">
           {/* <h4>{follow}</h4> */}
-          <a href="#" class="">Follow</a>
+          <a href="#">Follow</a>
         </div>
       </div>
     </div>

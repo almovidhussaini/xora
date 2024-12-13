@@ -56,7 +56,7 @@ const Ico = () => {
                 min="0"
                 style={{
                   backgroundColor: "#080B2A",
-                  color: "blue",
+                  color: "#B7D869",
                   borderColor: "#F2946D",
                 }}
               />
@@ -67,7 +67,7 @@ const Ico = () => {
                 className="form-select select-custom"
                 style={{
                   backgroundColor: "#080B2A",
-                  color: "blue",
+                  color: "#B7D869",
                   borderColor: "#F2946D",
                 }}
               >
@@ -110,7 +110,7 @@ const Ico = () => {
                 min="0"
                 style={{
                   backgroundColor: "#080B2A",
-                  color: "blue",
+                  color: "#B7D869",
                   borderColor: "#F2946D",
                 }}
               />
@@ -121,7 +121,7 @@ const Ico = () => {
                 className="form-select select-custom"
                 style={{
                   backgroundColor: "#080B2A",
-                  color: "blue",
+                  color: "#B7D869",
                   borderColor: "#F2946D",
                 }}
               >
@@ -135,7 +135,7 @@ const Ico = () => {
                 className="form-select select-custom"
                 style={{
                   backgroundColor: "#080B2A",
-                  color: "blue",
+                  color: "#B7D869",
                   borderColor: "#F2946D",
                 }}
               >
@@ -168,7 +168,7 @@ const Ico = () => {
                 className="form-select select-custom"
                 style={{
                   backgroundColor: "#080B2A",
-                  color: "blue",
+                  color: "#B7D869",
                   borderColor: "#F2946D",
                   width:'10rem'
                 }}

@@ -30,7 +30,7 @@ const Stake = () => {
                 placeholder="0"
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.0)",
-                  color: "blue",
+                  color: "#B7D869",
                   outline: "none",
                   fontSize: "2rem",
                   borderTop: "none",
@@ -79,7 +79,7 @@ const Stake = () => {
                 readOnly
                 style={{
                   backgroundColor: "rgba(255, 255, 255, 0.0)",
-                  color: "blue",
+                  color: "#B7D869",
                   fontSize: "2rem",
 
                   outline: "none",

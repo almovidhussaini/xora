@@ -1,0 +1,117 @@
+.mycard {
+    width: 180px;
+    height: 200px;
+    background-color: #111436;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 1rem;
+
+  }
+  
+  .card-1 {
+    transform: translate(-10%, -20%) rotate(-10deg);
+    z-index: 2;
+  }
+  
+  .card-2 {
+    transform: translate(10%, -20%) rotate(10deg);
+    z-index: 1;
+  }
+
+  .superxora{
+    background-color:#080B2A ;
+    color: white;
+    min-height: 80vh;
+    padding: 4rem 2rem;
+  }
+  
+  .line-with-zigzag {
+    position: relative;
+    height: 2px;
+    background: linear-gradient(to right, #ae5bff, #f36dff, #ff7d84);
+    box-shadow: 0 0 10px rgba(173, 91, 255, 0.8);
+    width: 90%;
+    left: 5%;
+    margin-bottom: 0.5rem;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .line-with-zigzag::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -8px;
+    width: 80px;
+    height: 20px;
+    background: transparent;
+    clip-path: polygon(
+    0% 50%, 
+    2.5% 0%, 
+    5% 50%, 
+    7.5% 100%, 
+    10% 50%, 
+    12.5% 0%, 
+    15% 50%, 
+    17.5% 100%, 
+    20% 50%, 
+    22.5% 0%, 
+    25% 50%, 
+    27.5% 100%, 
+    30% 50%, 
+    32.5% 0%, 
+    35% 50%, 
+    37.5% 100%, 
+    40% 50%, 
+    42.5% 0%, 
+    45% 50%, 
+    47.5% 100%, 
+    50% 50%, 
+    52.5% 0%, 
+    55% 50%, 
+    57.5% 100%, 
+    60% 50%, 
+    62.5% 0%, 
+    65% 50%, 
+    67.5% 100%, 
+    70% 50%, 
+    72.5% 0%, 
+    75% 50%, 
+    77.5% 100%, 
+    80% 50%, 
+    82.5% 0%, 
+    85% 50%, 
+    87.5% 100%, 
+    90% 50%, 
+    92.5% 0%, 
+    95% 50%, 
+    97.5% 100%, 
+    100% 50%
+  );
+    background: linear-gradient(to right, #ae5bff, #f36dff, #ff7d84);
+    box-shadow: 0 0 10px rgba(173, 91, 255, 0.8);
+  }
+  
+  @media (max-width: 576px) {
+    .mycard {
+      width: 160px;
+      height: 180px;
+    }
+  }
+  @media (max-width: 400px) {
+    .mycard {
+      width: 150px;
+      height: 180px;
+    }
+    
+  }
+  @media (max-width: 350px) {
+    .mycard {
+      width: 140px;
+      height: 180px;
+    }
+    
+  }

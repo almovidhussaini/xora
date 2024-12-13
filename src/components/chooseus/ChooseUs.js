@@ -4,9 +4,9 @@ import React from "react";
 
 const ChooseUs = () => {
   return (
-    <div
+    <div id="about"
       style={{
-        backgroundColor: "#0b0f2e",
+        backgroundColor: "#080B2A",
         color: "white",
         padding: "4rem 0",
         textAlign: "left",
@@ -74,7 +74,7 @@ const ChooseUs = () => {
               Eu feugiat adipiscing viverra turpis. Mattis tellus malesuada
               massa amet facilisi.
             </p>
-            <button
+            {/* <button
               style={{
                 backgroundColor: "#ae5bff",
                 border: "none",
@@ -84,7 +84,7 @@ const ChooseUs = () => {
               }}
             >
               Connect Wallet
-            </button>
+            </button> */}
           
           </div>
         </div>

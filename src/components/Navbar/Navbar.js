@@ -1,98 +1,58 @@
-import React ,{useEffect, useState} from 'react';
+import React, { useEffect, useState } from "react";
 // import { useWeb3Modal } from "@web3modal/react";
 // import { useAccount } from "wagmi";
-import { AiOutlineClose, AiOutlineConsoleSql } from "react-icons/ai";
-import { Button, Modal, Form } from "react-bootstrap";
+import { AiOutlineClose } from "react-icons/ai";
+import { Modal } from "react-bootstrap";
+import { useConnect, useAccount } from "wagmi";
+// import LoadingOverlay from 'react-loading-overlay'
+import "../style/navbar.css";
 
+import { Account } from "../wallet/Account";
+import { WalletOptions } from "../wallet/WalletOptions";
+import logo from '../../assets/logo/xora1.PNG'
 
-const Navbar=()=> {
-
-  const [ currentAccount,setCurrentAccount] = useState(0);
+const Navbar = () => {
   const [isLoading, setLoading] = useState(false);
-    // const { isOpen, open, close, setDefaultChain } = useWeb3Modal();
-    // const { address, isConnecting, isDisconnected, isConnected } = useAccount();
-    // const { ethereum } = window;
-  
+  const { isConnected } = useAccount();
+
   const [show, setShow] = useState(false);
-
-//   const connectWallet = async () => {
-//     try {
-//         if (ethereum) {
-//             setLoading(true)
-//             const chainId = await ethereum.request({
-//                 method: "eth_chainId",
-//             });
-//             if (chainId !== "0xaa36a7") { //this is  sepolia. 0x38 is bnb mainnet
-//                 const chainParams = {
-//                     chainId: "0xaa36a7", // 
-//                 };
-//                 await ethereum.request({
-//                     method: "wallet_switchEthereumChain",
-//                     params: [chainParams],
-//                 });
-//             }
-//             const temp = await ethereum.request({
-//                 method: "eth_requestAccounts",
-//             });
-//             setLoading(false)
-
-//             setCurrentAccount(temp[0]);
-//         }
-//         else {
-//             throw new Error("Please Install Metamask")
-//         }
-//     } catch (err) {
-
-//         // console.log(err.message)
-//         setLoading(false)
-//         // alert(err)
-//     }
-// }
+  const { connectors, connect } = useConnect();
 
   const handleClose = () => {
     setShow(false);
   };
+  function ConnectWallet() {
+    if (isConnected) return <Account />;
+    return <WalletOptions setShow={setShow} />;
+  }
 
   const handleShow = () => setShow(true);
-  // const handleWalletConnect = async () => {
-  //   handleClose();
-  //   await open();
-  // };
-  // const isWalletconnected = async () => {
-  //   // console.log("1");
-  //   if (isConnected) {
-  //     // console.log("2");
 
-  //     setCurrentAccount(address);
-  //   } else {
-  //     // console.log("3");
+  useEffect(() => {
+    if (isConnected) {
+      setShow(false);
+    }
+  }, [isConnected]);
 
-  //     setCurrentAccount(null);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   isWalletconnected();
-  // });
-
-    return (
-      <nav
+  return (
+    <nav
       className="navbar navbar-expand-lg px-4 position-sticky top-0"
       style={{
         backgroundColor: "#080B2A",
         color: "white",
         height: "4rem",
         borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
-        zIndex:'30'
+        zIndex: "30",
+     
       }}
     >
       <div className="container-fluid">
         {/* Logo */}
         <a className="navbar-brand text-white" href="#">
           <img
-            src="/path/to/logo.png"
+            src={logo}
             alt="Logo"
-            style={{ width: "30px", height: "30px" }}
+            style={{ width: "50px", height: "50px", borderRadius:'50%' }}
           />
         </a>
 
@@ -106,7 +66,7 @@ const Navbar=()=> {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon" style={{backgroundColor:'grey'}}></span>
         </button>
 
         <div
@@ -116,17 +76,17 @@ const Navbar=()=> {
           {/* Navigation Links */}
           <ul className="navbar-nav mx-auto">
             <li className="nav-item" style={{ marginRight: "3rem" }}>
-              <a className="nav-link text-white" href="#">
+              <a className="nav-link text-white" href="#home">
                 Home
               </a>
             </li>
             <li className="nav-item" style={{ marginRight: "3rem" }}>
-              <a className="nav-link text-white" href="#" >
+              <a className="nav-link text-white" href="#about">
                 About Us
               </a>
             </li>
-            <li className="nav-item" style={{ marginRight: "3rem" }} >
-              <a className="nav-link text-white" href="#">
+            <li className="nav-item" style={{ marginRight: "3rem" }}>
+              <a className="nav-link text-white"  href="#roadmap">
                 Roadmap
               </a>
             </li>
@@ -153,74 +113,56 @@ const Navbar=()=> {
             </button>
 
             {/* Connect Wallet Button */}
-            <button
-              className="btn"
-              style={{
-                background: "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
-                color: "white",
-                border: "none",
-                borderRadius: "20px",
-                padding: "0.5rem 1rem",
-              }}
-              onClick={handleShow}
+            <div
+              className="walletButton"
             >
-              Connect Wallet
-            </button>
-            {/* <Modal
-        className="custom-modal"
-        show={show}
-        onHide={isLoading ? null : handleClose}
-        centered
-      >
-        <LoadingOverlay
-          active={isLoading}
-          spinner
-          styles={{
-            overlay: (base) => ({
-              ...base,
-              zIndex: 9999, // Increase the z-index value
-            }),
-          }}
-        >
-          <Modal.Header>
-            <button
-              className="all-unset close-button"
-              onClick={() => setShow(false)}
-              style={{ cursor: "pointer" }}
-            >
-              <AiOutlineClose />
-            </button>
-          </Modal.Header>
-          <Modal.Body>
-            <>
-              <button class="button btn btn-two" onClick={connectWallet}>
-                <img
-                  src="/images/icons/MetaMask_Fox.png"
-                  // src="/images/icons/usdt.png"
-                  alt="Logo"
-                  class="button__logo"
-                />
-                <span class="button__text">Metamask</span>
-              </button>
+              {isConnected ? (
+                <ConnectWallet />
+              ) : (
+                <button
+                  className="btn"
+                  style={{
+                    background:
+                      "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "20px",
+                    padding: "0.5rem 1rem",
+                  }}
+                  onClick={handleShow}
+                >
+                  Connect Wallet
+                </button>
+              )}
+            </div>
+            {/* <ConnectWallet /> */}
 
-              <button class="button btn btn-two" onClick={handleWalletConnect}>
-                <img
-                  src="/images/icons/wconnect.png"
-                  alt="Logo"
-                  class="button__logo"
-                />
-                <span class="button__text">WalletConnect</span>
-              </button>
-            </>
-          </Modal.Body>
-        </LoadingOverlay>
-      </Modal> */}
+            <Modal
+              className="custom-modal"
+              show={show}
+              onHide={isLoading ? null : handleClose}
+              centered
+            >
+              <Modal.Header>
+                <button
+                  className="all-unset close-button"
+                  onClick={() => setShow(false)}
+                  style={{ cursor: "pointer" }}
+                >
+                  <AiOutlineClose />
+                </button>
+              </Modal.Header>
+              <Modal.Body className="modal-body">
+                <>
+                  <ConnectWallet />
+                </>
+              </Modal.Body>
+            </Modal>
           </div>
         </div>
       </div>
     </nav>
-
-    );
-}
+  );
+};
 
 export default Navbar;
