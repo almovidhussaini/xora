@@ -41,7 +41,7 @@ const Creator = () => {
         <h2>Our Creator</h2>
         <p>
           The largest and unique Super rare Xora marketplace for crypto
-          collectibles
+          collectibles.
         </p>
         <div className="row d-flex justify-content-center ">
           {creators.map((creator, index) => (
