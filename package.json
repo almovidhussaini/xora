@@ -21,6 +21,7 @@
     "react-loading-overlay": "^1.0.1",
     "react-router-dom": "^7.0.2",
     "react-scripts": "5.0.1",
+    "react-vertical-timeline-component": "^3.5.3",
     "viem": "^2.21.54",
     "wagmi": "^2.13.4",
     "web-vitals": "^2.1.4"

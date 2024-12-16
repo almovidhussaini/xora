@@ -1,5 +1,6 @@
 import React from "react";
-import '../style/stake.css'
+import Card from "../card/Card";
+import "../style/stake.css";
 
 const Stake = () => {
   return (
@@ -13,14 +14,16 @@ const Stake = () => {
         style={{ width: "100%" }}
       >
         {/* Staking Card */}
-        <div
+        {/* <div
           className="col-md-8 p-4"
           style={{
             backgroundColor: "rgba(255, 255, 255, 0.05)",
             borderRadius: "20px",
             border: "1px solid #F2946D"
           }}
-        >
+        > */}
+
+        <Card className="col-md-8 col-10">
           <div className="row">
             {/* Left Section */}
             <div className="col-md-6">
@@ -35,8 +38,8 @@ const Stake = () => {
                   outline: "none",
                   fontSize: "2rem",
                   borderTop: "none",
-                  borderLeft:"none",
-                  borderRight:"none"
+                  borderLeft: "none",
+                  borderRight: "none",
                 }}
               />
               <div className="d-flex justify-content-center gap-3 mt-3">
@@ -67,12 +70,7 @@ const Stake = () => {
 
             {/* Right Section */}
             <div className="col-md-6">
-              <p
-                className="text-center "
-                
-              >
-                Reward Token:
-              </p>
+              <p className="text-center ">Reward Token:</p>
               <input
                 type="text"
                 className="form-control"
@@ -84,10 +82,10 @@ const Stake = () => {
                   fontSize: "2rem",
 
                   outline: "none",
-                 
+
                   borderTop: "none",
-                  borderLeft:"none",
-                  borderRight:"none"
+                  borderLeft: "none",
+                  borderRight: "none",
                 }}
               />
               <div className="d-flex justify-content-center mt-3">
@@ -107,7 +105,7 @@ const Stake = () => {
               </div>
             </div>
           </div>
-        </div>
+        </Card>
       </div>
     </div>
   );

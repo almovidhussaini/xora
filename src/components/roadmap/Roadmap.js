@@ -1,4 +1,8 @@
 import React from "react";
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import { IoMdBriefcase } from "react-icons/io";
+import 'react-vertical-timeline-component/style.min.css';
+import Card from "../card/Card";
 
 const Roadmap = () => {
   const roadmapData = [
@@ -10,66 +14,35 @@ const Roadmap = () => {
   ];
 
   return (
-    <div
-    id="roadmap"
-      className="roadmap-container py-5"
-      style={{
-        backgroundColor: "#080B2A",
-        color: "white",
-        textAlign: "center",
-      }}
-    >
-      {/* Header */}
-      <h2 style={{ marginBottom: "1rem" }}>Road map 2024</h2>
-      <p style={{ marginBottom: "2rem", color: "#CCCCCC" }}>
-        The largest and unique Super rare Xora marketplace for crypto-collectibles
-      </p>
+    <div style={{  backgroundColor: "#080B2A"}} id="roadmap">
+      <h1 className="text-center p-5 " style={{color:'white'}}>Roadmap</h1>
+      <VerticalTimeline>
 
-      {/* Timeline */}
-      <div className="container position-relative">
-        {/* Horizontal line for timeline */}
-        <div className="row justify-content-center position-relative">
-          {/* Roadmap items */}
-          {roadmapData.map((item, index) => (
-            <div
-              key={index}
-              className="col-12 col-md-6 col-lg-2 d-flex flex-column align-items-center"
-              style={{ marginBottom: "2rem" }}
-            >
-              {/* Box */}
-              <div
-                className="roadmap-box"
-                style={{
-                  padding: "1rem",
-                  backgroundColor: "#111436",
-                  border: "1px solid #F2946D",
-                  borderRadius: "10px",
-                  marginBottom: "1rem",
-                  zIndex: 2,
-                  width: "180px",
-                }}
-              >
-                <h5 style={{ fontWeight: "bold" }}>{item.month}</h5>
-                <h6>{item.title}</h6>
-                <p style={{ fontSize: "14px", color: "#CCCCCC" }}>{item.description}</p>
-              </div>
+        { roadmapData.map((data, index) =>(
+       
+  <VerticalTimelineElement
+    className="vertical-timeline-element--work border-but"
+    contentStyle={{ background: 'transparent', color: '#fff'}}
+   
+    date={data.month}
+    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    icon={<IoMdBriefcase />}
+  >
+    <Card> 
+ 
+    <h3 className="vertical-timeline-element-title">{data.title}</h3>
+    
+    <p>
+      {data.description}
+    </p>
+    </Card>
+  </VerticalTimelineElement>
 
-              {/* Circle */}
-              <div
-                style={{
-                  width: "20px",
-                  height: "20px",
-                  background:
-                    "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
-                  borderRadius: "50%",
-                  zIndex: 2,
-                }}
-              ></div>
-            </div>
-          ))}
-        </div>
-      </div>
+  ))
+     }
+  </VerticalTimeline>
     </div>
+    
   );
 };
 

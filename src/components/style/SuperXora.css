@@ -21,8 +21,8 @@
   .superxora{
     background-color:#080B2A ;
     color: white;
-    min-height: 80vh;
-    padding: 4rem 2rem;
+    padding: 1rem 2rem;
+    margin-bottom: -4rem;
   }
   
   .line-with-zigzag {

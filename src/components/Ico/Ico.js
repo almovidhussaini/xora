@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../style/ico.css";
+import Card from "../card/Card";
 
 const Ico = () => {
   const [currentStage, setCurrentStage] = useState(0);
@@ -34,18 +35,11 @@ const Ico = () => {
     >
       <h2>ICO</h2>
       <div
-        className="row justify-content-center mt-4 "
+        className="row justify-content-center  mt-4 "
         style={{ width: "100%" }}
       >
         {/* Buy Token Card */}
-        <div
-          className="col-md-5 m-2 p-4 card-custom"
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.05)",
-            borderRadius: "20px",
-             border: "1px solid #F2946D"
-          }}
-        >
+        <Card className="col-9 col-md-5 m-2">
           <h5 className="mb-5">Buy Token</h5>
 
           <div className="d-flex justify-content-between align-items-center mt-4">
@@ -90,17 +84,10 @@ const Ico = () => {
           >
             Buy
           </button>
-        </div>
+        </Card>
 
         {/* Withdraw Card */}
-        <div
-          className="col-md-5 m-2 p-4 card-custom"
-          style={{
-            backgroundColor: "rgba(255, 255, 255, 0.05)",
-            borderRadius: "20px",
-            border: "1px solid #F2946D"
-          }}
-        >
+        <Card className="col-md-5 m-2 col-9">
           <h5 className="mb-5">Withdraw</h5>
 
           <div className="d-flex justify-content-between align-items-center mt-4">
@@ -158,29 +145,26 @@ const Ico = () => {
           >
             Withdraw
           </button>
-        </div>
-        
+        </Card>
       </div>
-      <div className="row m-2 p-4  d-flex justify-content-center align-items-center"
->
-    <h3>Claim Xora Token</h3>
+      <div className="row m-2 p-4  d-flex justify-content-center align-items-center">
+        <h3>Claim Xora Token</h3>
         <div className=" d-flex justify-content-center align-items-center mt-3 gap-3">
-        
-        <select
-                className="form-select select-custom"
-                style={{
-                  backgroundColor: "#080B2A",
-                  color: "#B7D869",
-                  borderColor: "#F2946D",
-                  width:'10rem'
-                }}
-              >
-                <option value="1">PrivateSale</option>
-                <option value="2">PreSale</option>
-                <option value="2">PublicSale</option>
-              </select>
+          <select
+            className="form-select select-custom"
+            style={{
+              backgroundColor: "#080B2A",
+              color: "#B7D869",
+              borderColor: "#F2946D",
+              width: "10rem",
+            }}
+          >
+            <option value="1">PrivateSale</option>
+            <option value="2">PreSale</option>
+            <option value="2">PublicSale</option>
+          </select>
 
-              <button
+          <button
             className="btn"
             style={{
               width: "10rem",
@@ -188,12 +172,11 @@ const Ico = () => {
                 "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
               border: "none",
               color: "white",
-              
             }}
           >
             Claim
           </button>
-              </div>
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ const SuperXoraPage = () => {
     <div id="home"
       className="container-fluid superxora"
     >
-      <div className="row align-items-center mt-5">
+      <div className="row align-items-center ">
         {/* Left Section */}
         <div className="col-12 col-lg-6 text-center text-lg-center mt-5 mb-lg-0 " > 
           <h1

@@ -6,4 +6,4 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
+.gradient-bg {  background: linear-gradient(to right, rgba(59, 130, 246, 0.5), rgba(219, 39, 119, 0.5)); }

@@ -20,19 +20,27 @@ const CountDownTimer = () => {
     if (seconds > 0) {
       setTimeout(() => {
         setSeconds(seconds - 1);
-        SecondsCardRef.current.classList.toggle('rotate');
+        if (SecondsCardRef.current) { // Add this check
+          SecondsCardRef.current.classList.toggle('rotate');
+        }
       }, 1000);
     }
     if (seconds === 0 && minutes > 0) {
       setMinutes(minutes - 1);
-      MinutesCardRef.current.classList.toggle('rotate');
+      if(MinutesCardRef.current){
+        MinutesCardRef.current.classList.toggle('rotate');
+      }
+    
     }
   }, [seconds, minutes]);
   useEffect(() => {
     hours === 0 && setHours(23);
     if (minutes === 0 && hours > 0) {
       setHours(hours - 1);
-      HoursCardRef.current.classList.toggle('rotate');
+      if(HoursCardRef.current){
+        HoursCardRef.current.classList.toggle('rotate');
+      }
+      
     }
   }, [minutes, hours]);
   useEffect(() => {

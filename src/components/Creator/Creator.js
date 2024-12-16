@@ -5,6 +5,7 @@ import shahalmoved from '../../assets/team/shah.PNG'
 import khurshid from '../../assets/team/kurshid.PNG'
 import Zubair from '../../assets/team/zubair.PNG'
 
+
 const Creator = () => {
   const creators = [
     {
@@ -45,6 +46,7 @@ const Creator = () => {
         </p>
         <div className="row d-flex justify-content-center ">
           {creators.map((creator, index) => (
+            
             <CreatorProfile
               key={index}
               img={creator.image}

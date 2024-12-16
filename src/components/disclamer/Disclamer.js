@@ -2,7 +2,7 @@ import React from 'react';
 
 const Disclamer = () => {
     return (
-        <section id="tnc" className="pt-70 pb-110 contact-bg" style={{backgroundColor: '#080B2A', color: 'white', marginBottom:'-3rem', paddingBottom:'-4rem', paddingTop:'2rem'}}>
+        <section id="tnc" className="pt-70 pb-110 contact-bg" style={{backgroundColor: '#080B2A', color: 'white', marginBottom:'-3rem', paddingBottom:'-4rem', paddingTop:'2rem', height:'100vh'}}>
         <div className="container">
           {/* section title */}
           <div className="row  justify-content-center">

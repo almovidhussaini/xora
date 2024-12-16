@@ -82,7 +82,7 @@ const Navbar = () => {
           </Link>
             </li>
             <li className="nav-item" style={{ marginRight: "3rem" }}>
-              <a className="nav-link text-white" href="#about">
+              <a className="nav-link text-white" href="#home">
                 About Us
               </a>
             </li>

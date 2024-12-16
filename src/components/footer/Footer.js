@@ -102,10 +102,10 @@ const Footer = () => {
           <div className="col-3 col-md-2 mb-3 text-center">
             <h6 style={{ color: "#AE5BFF" }}>Company</h6>
             <ul className="list-unstyled">
-              <li><Link to="/terms" style={{ textDecoration: 'none' }}>Terms & Conditions</Link></li>
-              <li><Link to ="/policy" style={{ textDecoration: 'none' }}>Privacy Policy </Link> </li>
-              <li><Link to="/Disclamer" style={{ textDecoration: 'none' }}>Disclamer</Link></li>
-              <li><Link to="/Regulatory" style={{ textDecoration: 'none' }}>Regulatory Statements</Link></li>
+              <li><Link to="/terms" style={{ textDecoration: 'none',color: 'inherit' }}>Terms & Conditions</Link></li>
+              <li><Link to ="/policy" style={{ textDecoration: 'none',color: 'inherit' }}>Privacy Policy </Link> </li>
+              <li><Link to="/Disclamer" style={{ textDecoration: 'none',color: 'inherit' }}>Disclamer</Link></li>
+              <li><Link to="/Regulatory" style={{ textDecoration: 'none' ,color: 'inherit'}}>Regulatory Statements</Link></li>
             </ul>
           </div>
 

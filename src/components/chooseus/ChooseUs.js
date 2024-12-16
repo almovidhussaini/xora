@@ -8,7 +8,7 @@ const ChooseUs = () => {
       style={{
         backgroundColor: "#080B2A",
         color: "white",
-        padding: "4rem 0",
+        padding: "2rem 0",
         textAlign: "left",
         position: "relative",
       }}
