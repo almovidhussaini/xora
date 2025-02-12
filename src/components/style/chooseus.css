@@ -1,0 +1,22 @@
+.chooseusimg{
+    height: fit-content;
+    width: fit-content;
+}
+
+.chooseusText{
+    margin-top: -8rem;
+}
+
+@media (max-width: 700px) {
+    .chooseusimg{
+        height: 200px;
+        width: 200px;
+    }
+    
+  }
+  @media (max-width: 800px) {
+    .chooseusText{
+        margin-top: 0;
+    }
+    
+  }

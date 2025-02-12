@@ -1,16 +1,65 @@
-.mycard {
-    width: 180px;
-    height: 200px;
+/* .mycard {
+    width: 200px;
+    height: 300px;
     background-color: #111436;
-    border: 1px solid #F2946D;
+    border: 1px solid linear-gradient(90deg, #6F5CEA, #AE5BFF, #F2946D);
+   
     border-radius: 10px;
     padding: 1rem;
+    margin-top: 4rem;
 
+  } */
+
+  .mycard {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    background-color: #111436; /* Inner card background */
+    border-radius: 10px;
+    padding: 1rem;
+    margin-top: 4rem;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mycard::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px; /* Border thickness */
+    border-radius: inherit;
+    background: linear-gradient(90deg, #6F5CEA, #AE5BFF, #F2946D);
+    -webkit-mask: 
+      linear-gradient(#fff 0 0) content-box, 
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: destination-out;
+    mask-composite: exclude;
+    z-index: -1;
+}
+
+.stagesbar{
+  align-items: center;
+  
+}
+.wholebar{
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .marketpace{
+    font-weight: bold;
+    font-size: 80px;
   }
   
   .card-1 {
     transform: translate(-10%, -20%) rotate(-10deg);
     z-index: 2;
+    margin-right: 1rem;
   }
   
   .card-2 {
@@ -21,8 +70,12 @@
   .superxora{
     background-color:#080B2A ;
     color: white;
-    padding: 1rem 2rem;
-    margin-bottom: -4rem;
+    padding: 4rem 2rem;
+    /* margin-bottom: -4rem; */
+    height: fit-content;
+  }
+  .stagesbar{
+    width: 70%;
   }
   
   .line-with-zigzag {
@@ -32,10 +85,11 @@
     box-shadow: 0 0 10px rgba(173, 91, 255, 0.8);
     width: 90%;
     left: 5%;
-    margin-bottom: 0.5rem;
+    /* margin-bottom: 0.5rem; */
     background-color: red;
     display: flex;
     justify-content: center;
+    margin: 3rem 0;
     
   }
   
@@ -99,6 +153,15 @@
     .mycard {
       width: 160px;
       height: 180px;
+    }
+    .superxora{
+      min-height: fit-content;
+    }
+    .marketpace{
+      font-size: 30px;
+    }
+    .stagesbar{
+      width: 100%;
     }
   }
   @media (max-width: 400px) {
