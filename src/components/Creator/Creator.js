@@ -46,6 +46,9 @@ const Creator = () => {
         </p>
         <div className="row d-flex justify-content-center ">
           {creators.map((creator, index) => (
+
+            <div  key={index} className="col-md-2 col-sm-6" style={{margin:'0 1.5rem'}}>
+             
             
             <CreatorProfile
               key={index}
@@ -54,6 +57,7 @@ const Creator = () => {
               role={creator.role}
               follow={creator.follow}
             />
+             </div>
           ))}
         </div>
       </div>

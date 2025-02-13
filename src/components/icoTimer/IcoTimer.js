@@ -50,42 +50,42 @@ const IcoTimer =() =>{
     if (completed) {
       return (
         <div className="countdown-container">
-          <div className="time-count" style={{ borderColor: "#00C8FF" }}>
+          <div className="time-count timer" >
             <span>{"00"}</span>
             <p>Days</p>
           </div>
-          <div className="time-count" style={{ borderColor: "#FFA500" }}>
+          <div className="time-count timer">
             <span>{"00"}</span>
-            <p>Hour</p>
+            <p>Hours</p>
           </div>
-          <div className="time-count" style={{ borderColor: "#FF4081" }}>
+          <div className="time-count timer">
             <span>{"00"}</span>
-            <p>Minute</p>
+            <p>Minutes</p>
           </div>
-          <div className="time-count" style={{ borderColor: "#00C853" }}>
+          <div className="time-count timer">
             <span>{"00"}</span>
-            <p>Second</p>
+            <p>Seconds</p>
           </div>
         </div>
       );
     } else {
       return (
         <div className="countdown-container">
-          <div className="time-count" style={{ borderColor: "#00C8FF" }}>
+          <div className="time-count timer" >
             <span>{days < 10 ? "0" + days : days}</span>
             <p>Days</p>
           </div>
-          <div className="time-count" style={{ borderColor: "#FFA500" }}>
+          <div className="time-count timer" >
             <span>{hours < 10 ? "0" + hours : hours}</span>
-            <p>Hour</p>
+            <p>Hours</p>
           </div>
-          <div className="time-count" style={{ borderColor: "#FF4081" }}>
+          <div className="time-count timer" >
             <span>{minutes < 10 ? "0" + minutes : minutes}</span>
-            <p>Minute</p>
+            <p>Minutes</p>
           </div>
-          <div className="time-count" style={{ borderColor: "#00C853" }}>
+          <div className="time-count timer">
             <span>{seconds < 10 ? "0" + seconds : seconds}</span>
-            <p>Second</p>
+            <p>Seconds</p>
           </div>
         </div>
       );
