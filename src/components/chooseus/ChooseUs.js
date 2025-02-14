@@ -2,6 +2,7 @@ import React from "react";
 // import { Container, Row, Col, Button } from "bootstrap";
 import chooseus from '../../assets/chooseus.png'
 import '../style/chooseus.css'
+import Star from '../../assets/icons/Star.png'
 
 
 const ChooseUs = () => {
@@ -15,7 +16,27 @@ const ChooseUs = () => {
         position: "relative",
       }}
     >
-      <div className="container">
+      <div className="container position-relative">
+
+      <div className="position-absolute" style={{top:'80%', left:'10%'}}>
+        <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'10%', left:'90%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'60%', left:'90%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute">
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'70%', left:'50%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'10%', left:'45%'}}>
+      <img src={Star}/>
+      </div>
+
         <div className="row align-items-center">
           {/* Left Section: Circles */}
           <div className="col-md-6 d-flex justify-content-center">

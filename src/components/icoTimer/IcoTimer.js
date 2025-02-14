@@ -1,7 +1,7 @@
 import React from 'react';
 import '../style/timer.css';
 import Countdown from "react-countdown";
-
+import Star from '../../assets/icons/Star.png'
 // import Attribution from './components/Attribution';
 // import CountDownTimer from './components/CountDownTimer';
 import CountDownTimer from './CountDownTimer';
@@ -94,7 +94,25 @@ const IcoTimer =() =>{
   
 
     return (
-        <div className="app-container text-white"style={{ backgroundColor: "#080B2A"}} >
+        <div className="app-container text-white position-relative"style={{ backgroundColor: "#080B2A"}} >
+          <div className="position-absolute" style={{top:'80%', left:'10%'}}>
+        <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'10%', left:'90%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'60%', left:'90%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute">
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'70%', left:'50%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'10%', left:'35%'}}>
+      <img src={Star}/>
+      </div>
       <div className="container">
         <main>
           <h2 style={{marginTop:'-3rem'}}>Token Sale Will End In</h2>

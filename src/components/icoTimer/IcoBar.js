@@ -109,11 +109,11 @@ const IcoBar = () => {
       >
         <div>
           <span style={{ fontWeight: "bold" }}>Raised</span> -{" "}
-          <span style={{ color: "blue" }}>{raised} Token</span>
+          <span style={{ color: "#EA8D80" }}>{raised} Token</span>
         </div>
         <div>
           <span style={{ fontWeight: "bold" }}>Target</span> -{" "}
-          <span style={{ color: "blue" }}>{target} Token</span>
+          <span style={{ color: "#EA8D80" }}>{target} Token</span>
         </div>
       </div>
       {/* Progress Bar */}
@@ -151,7 +151,7 @@ const IcoBar = () => {
               style={{
                 color:
                   index === activeStage
-                    ? "blue"
+                    ? "#EA8D80"
                     : "rgba(255, 255, 255, 0.5)",
                 fontSize: "1.5rem",
               }}

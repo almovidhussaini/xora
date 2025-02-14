@@ -493,8 +493,8 @@
   border-color: #00C8FF;
 } */
 .time-count {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   display: flex;
   flex-direction: column;
   justify-content: center;

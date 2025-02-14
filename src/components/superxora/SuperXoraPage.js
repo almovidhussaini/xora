@@ -1,5 +1,8 @@
 import React from "react";
 import "../style/SuperXora.css";
+// import Star from "../star/Star";
+import Star from '../../assets/icons/Star.png'
+
 
 const SuperXoraPage = () => {
   const raised = 1562;
@@ -20,7 +23,26 @@ const SuperXoraPage = () => {
   const activeStage = 0;
 
   return (
-    <div id="home" className="container-fluid superxora">
+    <div id="home" className="container-fluid superxora position-relative">
+      <div className="position-absolute" style={{top:'80%', left:'10%'}}>
+        <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'10%', left:'90%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'60%', left:'90%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute">
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'50%', left:'50%'}}>
+      <img src={Star}/>
+      </div>
+      <div className="position-absolute" style={{top:'10%', left:'45%'}}>
+      <img src={Star}/>
+      </div>
+      
       <div className="row align-items-center ">
         {/* Left Section */}
         <div className="col-12 col-lg-6 text-center text-lg-center mt-5 mb-lg-0 ">
@@ -45,6 +67,8 @@ const SuperXoraPage = () => {
             crypto-collectibles
           </p>
         </div>
+
+        
 
         {/* Right Section */}
         <div className="col-12 col-lg-6 d-flex  align-items-center justify-content-center position-relative mt-5">
@@ -97,11 +121,11 @@ const SuperXoraPage = () => {
           >
             <div>
               <span style={{ fontWeight: "bold" }}>Raised</span> -{" "}
-              <span style={{ color: "blue" }}>{raised} Token</span>
+              <span style={{ color: "#EA8D80" }}>{raised} Token</span>
             </div>
             <div>
               <span style={{ fontWeight: "bold" }}>Target</span> -{" "}
-              <span style={{ color: "blue" }}>{target} Token</span>
+              <span style={{ color: "#EA8D80" }}>{target} Token</span>
             </div>
           </div>
           {/* Progress Bar */}
@@ -139,7 +163,7 @@ const SuperXoraPage = () => {
                   style={{
                     color:
                       index === activeStage
-                        ? "blue"
+                        ? "#EA8D80"
                         : "rgba(255, 255, 255, 0.5)",
                     fontSize: "1.5rem",
                   }}
