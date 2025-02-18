@@ -1,0 +1,98 @@
+.timeline-container {
+  background-color: #000000;
+  min-height: 100vh;
+  position: relative;
+  padding: 2rem;
+}
+
+.road {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  background-color: #171744;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.road-line {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+  background-size: 20px 2px;
+  background-repeat: repeat-x;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.cards-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline-card {
+  background-color: #171744;
+  border-radius: 15px;
+  padding: 1.5rem;
+  color: white;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-content {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.card-date {
+  display: block;
+  opacity: 0.7;
+}
+
+.connector {
+  width: 2px;
+  height: 50px;
+  background-image: linear-gradient(#ffffff 50%, transparent 50%);
+  background-size: 2px 10px;
+  margin: 0 auto;
+}
+
+.top-row .connector {
+  margin-top: -1rem;
+}
+
+.bottom-row .connector {
+  margin-bottom: -1rem;
+}
+
+.row {
+  margin: 3rem 0;
+}
+
+@media (max-width: 768px) {
+  .timeline-card {
+    margin: 1rem 0;
+  }
+
+  .connector {
+    height: 30px;
+  }
+
+  .row {
+    margin: 1rem 0;
+  }
+}
+
