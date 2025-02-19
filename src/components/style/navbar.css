@@ -35,6 +35,12 @@
     transform: translateY(-50%);
   }
 
+  .navbarIcon{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+  }
+
   @media (max-width: 992px) {
     .walletButton {
       position: static; 
@@ -42,5 +48,9 @@
       transform: none; 
       /* margin-left: auto;  */
       /* margin-right: auto; */
+    }
+    .navbarIcon{
+      width: 50px;
+      height: 50px;
     }
   }

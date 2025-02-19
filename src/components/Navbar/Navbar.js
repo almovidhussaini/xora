@@ -54,7 +54,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Logo"
-            style={{ width: "50px", height: "50px", borderRadius:'50%',marginLeft:'2rem' }}
+            className="navbarIcon"
           />
         </a>
 
@@ -74,10 +74,11 @@ const Navbar = () => {
         <div
           className="collapse navbar-collapse justify-content-between"
           id="navbarNav"
+          style={{paddingLeft:'-2rem'}}
         >
           {/* Navigation Links */}
-          <ul className="navbar-nav mx-auto">
-            <li className="nav-item" style={{ marginRight: "3rem" }}>
+          <ul className="navbar-nav mx-auto" >
+            <li className="nav-item" style={{ marginRight: "3rem", marginLeft:'-13rem' }}>
             <Link className="nav-link text-white" to="/">
             Home
           </Link>
