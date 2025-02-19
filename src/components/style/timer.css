@@ -515,6 +515,14 @@
     font-size: 1rem; /* Adjust font size for smaller screens */
   }
 }
+
+@media (max-width: 1200px) {
+  .time-count {
+    width: 120px;
+    height: 120px;
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+}
 .time-count span {
   font-size: 1.8rem;
   font-weight: bold;

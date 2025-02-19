@@ -11,7 +11,7 @@ import "../style/navbar.css";
 import { Account } from "../wallet/Account";
 import { WalletOptions } from "../wallet/WalletOptions";
 // import logo from '../../assets/logo/xora1.PNG'
-import logo from '../../assets/logo/xora1.png'
+import logo from '../../assets/logo/xora.png'
 
 const Navbar = () => {
   const [isLoading, setLoading] = useState(false);
