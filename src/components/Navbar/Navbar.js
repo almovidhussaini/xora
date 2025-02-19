@@ -10,7 +10,8 @@ import "../style/navbar.css";
 
 import { Account } from "../wallet/Account";
 import { WalletOptions } from "../wallet/WalletOptions";
-import logo from '../../assets/logo/xora1.PNG'
+// import logo from '../../assets/logo/xora1.PNG'
+import logo from '../../assets/logo/xora1.png'
 
 const Navbar = () => {
   const [isLoading, setLoading] = useState(false);
@@ -53,7 +54,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt="Logo"
-            style={{ width: "50px", height: "50px", borderRadius:'50%' }}
+            style={{ width: "50px", height: "50px", borderRadius:'50%',marginLeft:'2rem' }}
           />
         </a>
 
