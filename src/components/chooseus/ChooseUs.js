@@ -21,16 +21,16 @@ const ChooseUs = () => {
       <div className="position-absolute" style={{top:'80%', left:'10%'}}>
         <img src={Star}/>
       </div>
-      <div className="position-absolute" style={{top:'10%', left:'90%'}}>
+      <div className="position-absolute" style={{top:'7%', left:'90%'}}>
       <img src={Star}/>
       </div>
-      <div className="position-absolute" style={{top:'60%', left:'90%'}}>
+      <div className="position-absolute" style={{top:'70%', left:'90%'}}>
       <img src={Star}/>
       </div>
       <div className="position-absolute">
       <img src={Star}/>
       </div>
-      <div className="position-absolute" style={{top:'70%', left:'50%'}}>
+      <div className="position-absolute" style={{top:'80%', left:'50%'}}>
       <img src={Star}/>
       </div>
       <div className="position-absolute" style={{top:'10%', left:'45%'}}>
@@ -47,14 +47,11 @@ const ChooseUs = () => {
           <div className="col md-6">
             <h2 style={{ fontWeight: "bold", fontSize:'45px',  }} className="chooseusText">Why choose us?</h2>
             <p style={{ lineHeight: "1.6", marginBottom: "1rem", marginTop:'2rem' }}>
-              Lorem ipsum dolor sit amet consectetur. Congue eu arcu neque ut
-              semper. Eros suspendisse varius enim ultrices.Congue eu arcu neque ut
-              semper. Eros suspendisse varius enim ultrices.
+            At Xoraland we are reshaping gaming by blending fun, quality gameplay and the transformative power of blockchain in every session. With our play-to-earn model, you earn our native token Xora as you explore a wide range of engaging games. We believe that every session should be more than just entertainment it should offer tangible value in your everyday life.
             </p>
             <p style={{ lineHeight: "1.6", marginBottom: "1.5rem" }}>
-              Eu feugiat adipiscing viverra turpis. Mattis tellus malesuada
-              massa amet facilisi.Congue eu arcu neque ut
-              semper. Eros suspendisse varius enim ultrices.
+            Our mission is to empower gamers around the globe by providing a community-driven, fair and secure environment. Transparency and innovation are at the heart of everything we do, ensuring that every reward and game feature is crafted with your best interests at heart.
+            Come join us in reinventing the gaming experience, where passion, skill and technology come together to create a vibrant community that redefines the way we play and earn.
             </p>
             {/* <button
               style={{

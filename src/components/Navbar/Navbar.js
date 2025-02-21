@@ -78,7 +78,7 @@ const Navbar = () => {
         >
           {/* Navigation Links */}
           <ul className="navbar-nav mx-auto" >
-            <li className="nav-item" style={{ marginRight: "3rem", marginLeft:'-13rem' }}>
+            <li className="nav-item" style={{ marginRight: "3rem", marginLeft:'-10rem' }}>
             <Link className="nav-link text-white" to="/">
             Home
           </Link>
@@ -93,16 +93,16 @@ const Navbar = () => {
                 Roadmap
               </a>
             </li>
-            <li className="nav-item" style={{ marginRight: "3rem" }}>
+            {/* <li className="nav-item" style={{ marginRight: "3rem" }}>
               <a className="nav-link text-white" href="#">
                 FAQ
               </a>
-            </li>
-            <li className="nav-item">
+            </li> */}
+            {/* <li className="nav-item">
               <a className="nav-link text-white" href="#">
                 Contact Us
               </a>
-            </li>
+            </li> */}
           </ul>
 
           {/* Right Side */}
