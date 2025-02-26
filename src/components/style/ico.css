@@ -1,66 +1,66 @@
 .input-custom::placeholder {
-    color: #B7D869 !important; /* Change placeholder color to blue */
-  }
+  color: #B7D869 !important; /* Change placeholder color to blue */
+}
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+-webkit-appearance: none;
+margin: 0;
 }
 .gradient-bg {  background: linear-gradient(to right, rgba(59, 130, 246, 0.5), rgba(219, 39, 119, 0.5)); }
 
 .gradient-border-input {
-  position: relative;
-  display: inline-block;
-  border-radius: 42px; /* Ensures the border follows input shape */
-  padding: 2px; /* Controls border thickness */
-  margin-right: 0.2rem;
+position: relative;
+display: inline-block;
+border-radius: 42px; /* Ensures the border follows input shape */
+padding: 2px; /* Controls border thickness */
+margin-right: 0.2rem;
 }
 
 .gradient-border-input::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 42px; /* Match input border-radius */
-  padding: 1px; /* Border thickness */
-  background: linear-gradient(90deg, #F2946D, #AE5BFF, #6F5CEA);
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none; /* Ensures it doesn’t interfere with input */
+content: "";
+position: absolute;
+inset: 0;
+border-radius: 42px; /* Match input border-radius */
+padding: 1px; /* Border thickness */
+background: linear-gradient(90deg, #F2946D, #AE5BFF, #6F5CEA);
+-webkit-mask: 
+  linear-gradient(#fff 0 0) content-box, 
+  linear-gradient(#fff 0 0);
+mask: 
+  linear-gradient(#fff 0 0) content-box, 
+  linear-gradient(#fff 0 0);
+-webkit-mask-composite: xor;
+mask-composite: exclude;
+pointer-events: none; /* Ensures it doesn’t interfere with input */
 }
 
 .gradient-border-input input {
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  border-radius: 42px;
-  background-color: #080B2A !important; /* Force background color */
-  color: #B7D869 !important;
-  appearance: none;
-  caret-color: #B7D869; /* Keeps cursor visible */
+display: block;
+width: 100%;
+padding: 10px 15px;
+border: none;
+outline: none;
+border-radius: 42px;
+background-color: #080B2A !important; /* Force background color */
+color: #B7D869 !important;
+appearance: none;
+caret-color: #B7D869; /* Keeps cursor visible */
 }
 .xoraspan {
-  margin-right: 2rem;
+margin-right: 2rem;
 }
 .gradient-border-input-xora input {
-  display: block;
-  width: 100%;
-  padding: 10px 15px;
-  border: none;
-  outline: none;
-  border-radius: 0px !important;
-  color: #B7D869 !important;
-  background-color: transparent !important;
-  border-bottom: 2px solid white; 
-  appearance: none;
-  caret-color: #B7D869;
+display: block;
+width: 100%;
+padding: 10px 15px;
+border: none;
+outline: none;
+border-radius: 0px !important;
+color: #B7D869 !important;
+background-color: transparent !important;
+border-bottom: 2px solid white; 
+appearance: none;
+caret-color: #B7D869;
 }
 
 
@@ -69,15 +69,15 @@ input[type="number"]::-webkit-inner-spin-button {
 .gradient-border-input input:-webkit-autofill:hover,
 .gradient-border-input input:-webkit-autofill:focus,
 .gradient-border-input input:-webkit-autofill:active {
-  -webkit-box-shadow: 0 0 0px 1000px #080B2A inset !important;
-  box-shadow: 0 0 0px 1000px #080B2A inset !important;
-  background-color: #080B2A !important;
-  color: #B7D869 !important;
+-webkit-box-shadow: 0 0 0px 1000px #080B2A inset !important;
+box-shadow: 0 0 0px 1000px #080B2A inset !important;
+background-color: #080B2A !important;
+color: #B7D869 !important;
 }
 
 /* Prevent focus from changing background */
 .gradient-border-input input:focus {
-  background-color: #080B2A !important;
-  color: #B7D869 !important;
-  box-shadow: none !important;
+background-color: #080B2A !important;
+color: #B7D869 !important;
+box-shadow: none !important;
 }

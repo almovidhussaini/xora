@@ -132,7 +132,7 @@ const Footer = () => {
                 margin: 0,
               }}
             >
-              Copyright © NFT Core 2024 All rights reserved.
+              Copyright © xora 2025 All rights reserved.
             </p>
           </div>
         </div>

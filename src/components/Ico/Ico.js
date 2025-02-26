@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../style/ico.css";
-// import Card from "../card/Card";
 
 const Ico = () => {
   const [currentStage, setCurrentStage] = useState(0);
@@ -39,12 +38,17 @@ const Ico = () => {
         style={{ width: "100%" }}
       >
         {/* Buy Token Card */}
-        <div className="col-9 col-md-5 m-3 d-flex flex-column justify-content-center align-items-center mycard" style={{ minHeight: "fit-content" }} >
+
+        <div
+          className="col-9 col-md-5 m-3 d-flex flex-column justify-content-center align-items-center mycard"
+          style={{ minHeight: "fit-content" }}
+        >
           <h5 className="mb-5">Buy Token</h5>
 
-          <div className="d-flex justify-content-between align-items-center mt-4">
-            <div className="d-flex justify-content-between align-items-center">
-              <div className="gradient-border-input ">
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4">
+            {/* Amount Input */}
+            <div className="d-flex justify-content-between align-items-center w-100">
+              <div className="gradient-border-input flex-grow-1">
                 <input
                   type="number"
                   className="form-control input-custom"
@@ -54,8 +58,13 @@ const Ico = () => {
               </div>
               <span className="ms-2">AMOUNT</span>
             </div>
-            <div className="d-flex justify-content-center align-items-center" style={{marginLeft:'2rem'}}>
-              <div className="gradient-border-input rate" style={{maxWidth:'6rem'}}>
+
+            {/* Rate Input (Moves Below on Mobile) */}
+            <div className="d-flex justify-content-start align-items-center w-100 mt-3 mt-md-0">
+              <div
+                className="gradient-border-input rate"
+                style={{ maxWidth: "6rem" }}
+              >
                 <input
                   type="number"
                   className="form-control input-custom"
@@ -68,6 +77,7 @@ const Ico = () => {
               <span className="ms-2">Rate</span>
             </div>
           </div>
+
           <button
             className="btn mt-5"
             style={{
@@ -84,7 +94,10 @@ const Ico = () => {
         </div>
 
         {/* Withdraw Card */}
-        <div className="col-md-5 m-3 col-9 mycard d-flex flex-column justify-content-center align-items-center mycard" style={{ minHeight: "fit-content" }}>
+        {/* <div
+          className="col-md-5 m-3 col-9 mycard d-flex flex-column justify-content-center align-items-center mycard"
+          style={{ minHeight: "fit-content" }}
+        >
           <h5 className="mb-5">Withdraw</h5>
 
           <div className="d-flex justify-content-between align-items-center mt-4">
@@ -101,14 +114,17 @@ const Ico = () => {
               </div>
               <span className="ms-2 xoraspan">Xora</span>
             </div>
-            <div className="d-flex justify-content-center align-items-center" style={{marginLeft:'2rem'}}>
+            <div
+              className="d-flex justify-content-center align-items-center"
+              style={{ marginLeft: "2rem" }}
+            >
               <select
                 className="form-select select-custom"
                 style={{
                   backgroundColor: "#080B2A",
                   color: "#B7D869",
                   borderColor: "#F2946D",
-                  width:'100px'
+                  width: "100px",
                 }}
               >
                 <option value="0">Stage1</option>
@@ -131,22 +147,8 @@ const Ico = () => {
                 <option value="17">Stage18</option>
                 <option value="18">Stage19</option>
                 <option value="19">Stage20</option>
-                
               </select>
             </div>
-            {/* <div className="d-flex justify-content-center align-items-center">
-              <select
-                className="form-select select-custom"
-                style={{
-                  backgroundColor: "#080B2A",
-                  color: "#B7D869",
-                  borderColor: "#F2946D",
-                }}
-              >
-                <option value="1">USDC</option>
-                <option value="2">USDT</option>
-              </select>
-            </div> */}
           </div>
           <button
             className="btn mt-5"
@@ -161,8 +163,78 @@ const Ico = () => {
           >
             Withdraw
           </button>
-        </div>
+        </div> */}
+
+
+<div
+  className="col-md-5 m-3 col-9 mycard d-flex flex-column justify-content-center align-items-center"
+  style={{ minHeight: "fit-content" }}
+>
+  <h5 className="mb-5">Withdraw</h5>
+
+  {/* Amount Input & Dropdown - Responsive Layout */}
+  <div className="d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 w-100">
+    
+    {/* Xora Amount Input */}
+    <div className="d-flex justify-content-between align-items-center w-100">
+      <div className="gradient-border-input-xora flex-grow-1">
+        <input
+          type="number"
+          className="form-control input-custom"
+          placeholder="0"
+          min="0"
+          readOnly
+          value={123}
+        />
       </div>
+      <span className="ms-2 xoraspan">Xora</span>
+    </div>
+
+    {/* Stages Dropdown - Moves Below on Mobile */}
+    <div className="d-flex justify-content-center align-items-center w-100 mt-3 mt-md-0">
+      <select
+        className="form-select select-custom text-center"
+        style={{
+          backgroundColor: "#080B2A",
+          color: "#B7D869",
+          borderColor: "#F2946D",
+          width: "100px",
+        }}
+      >
+        {[...Array(20)].map((_, i) => (
+          <option key={i} value={i}>Stage {i + 1}</option>
+        ))}
+      </select>
+    </div>
+
+  </div>
+
+  {/* Withdraw Button */}
+  <button
+    className="btn mt-4"
+    style={{
+      width: "220px",
+      backgroundImage:
+        "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
+      border: "none",
+      color: "white",
+      borderRadius: "42px",
+    }}
+  >
+    Withdraw
+  </button>
+
+</div>
+
+
+
+
+
+      </div>
+
+
+
+
       <div className="row m-2 p-4  d-flex justify-content-center align-items-center">
         <h3>Claim Xora Token</h3>
         <div className=" d-flex justify-content-center align-items-center mt-3 gap-3">
@@ -195,7 +267,6 @@ const Ico = () => {
             <option value="17">Stage 18</option>
             <option value="18">Stage 19</option>
             <option value="19">Stage 20</option>
-            
           </select>
 
           <button
