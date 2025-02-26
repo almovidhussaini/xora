@@ -29,11 +29,11 @@ const CreatorProfile = ({ img, name, role, follow }) => {
 </div>
 <h4 className="mt-3 text-white">{name}</h4>
 <p className="">{role}</p>
-<div className="flex gap-3 flex-row">
+{/* <div className="flex gap-3 flex-row">
   <img src={twitter} style={{cursor:'pointer'}}/>
   <img src={mail} style={{cursor:'pointer'}}/>
   <img src={linkdin} style={{cursor:'pointer'}}/>
-</div>
+</div> */}
 </div>
   );
 };

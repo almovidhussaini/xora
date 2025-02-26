@@ -5,31 +5,36 @@ import shahalmoved from '../../assets/team/shah.PNG'
 import khurshid from '../../assets/team/kurshid.PNG'
 import Zubair from '../../assets/team/zubair.PNG'
 
+import aiden from '../../assets/team/aiden.webp';
+import lena from '../../assets/team/lena.webp';
+import kai from '../../assets/team/kai.webp';
+import eva from '../../assets/team/eva.webp'
+
 
 const Creator = () => {
   const creators = [
     {
-      image: image1,
-      name: "Ibtesam Asif",
-      role: "Project Manager",
+      image: aiden,
+      name: "Aiden Xorwell",
+      role: "Lead Blockchain Developer",
       follow: "follow",
     },
     {
-      image: shahalmoved,
-      name: "Shah Almoveed",
-      role: "Web3 developer",
+      image: lena,
+      name: "Lena Synthex",
+      role: "Game Design & UI/UX Specialist",
       follow: "follow",
     },
     {
-      image: khurshid,
-      name: "Khurshid Islam",
-      role: "UX/UI designer",
+      image: kai,
+      name: "Kai Novatrix ",
+      role: "Smart Contract & Security Engineer",
       follow: "follow",
     },
     {
-      image: Zubair,
-      name: "Zubair Ahmad",
-      role: "Marketing",
+      image: eva,
+      name: "Eva Nexon ",
+      role: "Marketing & Community Manager",
       follow: "follow",
     }
   ];

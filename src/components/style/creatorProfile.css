@@ -25,7 +25,7 @@
     position: relative;
     border: 2px solid transparent;
     background-clip: padding-box;
-    height: 320px;
+    height: 300px;
   }
   
   .team-card::before {
