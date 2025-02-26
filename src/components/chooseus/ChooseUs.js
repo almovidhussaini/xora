@@ -1,97 +1,46 @@
-import React from "react";
-// import { Container, Row, Col, Button } from "bootstrap";
-import chooseus from '../../assets/chooseus.png'
-import '../style/chooseus.css'
-import Star from '../../assets/icons/Star.png'
 
+
+import React from "react";
+import chooseus from '../../assets/chooseus.png';
+import '../style/chooseus.css';
+import Star from '../../assets/icons/Star.png';
 
 const ChooseUs = () => {
   return (
-    <div id="about"
-      style={{
-        backgroundColor: "#080B2A",
-        color: "white",
-        padding: "2rem 0",
-        textAlign: "left",
-        position: "relative",
-      }}
-    >
+    <div id="about" className="py-5 text-white" style={{ backgroundColor: "#080B2A", position: "relative" }}>
       <div className="container position-relative">
 
-      <div className="position-absolute" style={{top:'80%', left:'10%'}}>
-        <img src={Star}/>
-      </div>
-      <div className="position-absolute" style={{top:'7%', left:'90%'}}>
-      <img src={Star}/>
-      </div>
-      <div className="position-absolute" style={{top:'70%', left:'90%'}}>
-      <img src={Star}/>
-      </div>
-      <div className="position-absolute">
-      <img src={Star}/>
-      </div>
-      <div className="position-absolute" style={{top:'80%', left:'50%'}}>
-      <img src={Star}/>
-      </div>
-      <div className="position-absolute" style={{top:'10%', left:'45%'}}>
-      <img src={Star}/>
-      </div>
+        {/* Floating Stars for Decoration */}
+        <img src={Star} className="position-absolute d-none d-md-block" style={{ top: "80%", left: "10%" }} alt="Star" />
+        <img src={Star} className="position-absolute d-none d-md-block" style={{ top: "7%", left: "90%" }} alt="Star" />
+        <img src={Star} className="position-absolute d-none d-md-block" style={{ top: "70%", left: "90%" }} alt="Star" />
+        <img src={Star} className="position-absolute d-none d-md-block" style={{ top: "80%", left: "50%" }} alt="Star" />
+        <img src={Star} className="position-absolute d-none d-md-block" style={{ top: "10%", left: "45%" }} alt="Star" />
 
         <div className="row align-items-center">
-          {/* Left Section: Circles */}
-          <div className="col-md-6 d-flex justify-content-center">
-       <img src={chooseus} className="chooseusimg" />
+          {/* Left Section: Image */}
+          <div className="col-lg-6 d-flex justify-content-center mb-4 mb-lg-0">
+            <img src={chooseus} className="img-fluid chooseusimg" alt="Why Choose Us" />
           </div>
 
-          {/* Right Section: Text and Button */}
-          <div className="col md-6">
-            <h2 style={{ fontWeight: "bold", fontSize:'45px',  }} className="chooseusText">Why choose us?</h2>
-            <p style={{ lineHeight: "1.6", marginBottom: "1rem", marginTop:'2rem' }}>
-            At Xoraland we are reshaping gaming by blending fun, quality gameplay and the transformative power of blockchain in every session. With our play-to-earn model, you earn our native token Xora as you explore a wide range of engaging games. We believe that every session should be more than just entertainment it should offer tangible value in your everyday life.
+          {/* Right Section: Text Content */}
+          <div className="col-lg-6 text-center text-lg-start">
+            <h2 className="fw-bold display-5">Why choose us?</h2>
+            <p className="lead mt-3">
+              At Xoraland, we are reshaping gaming by blending fun, quality gameplay, and the transformative power of blockchain. With our play-to-earn model, you earn our native token **Xora** as you explore a wide range of engaging games.
             </p>
-            <p style={{ lineHeight: "1.6", marginBottom: "1.5rem" }}>
-            Our mission is to empower gamers around the globe by providing a community-driven, fair and secure environment. Transparency and innovation are at the heart of everything we do, ensuring that every reward and game feature is crafted with your best interests at heart.
-            Come join us in reinventing the gaming experience, where passion, skill and technology come together to create a vibrant community that redefines the way we play and earn.
+            <p className="lead">
+              Our mission is to empower gamers worldwide by providing a community-driven, fair, and secure environment. Transparency and innovation are at the heart of everything we do, ensuring that every reward and game feature is crafted with your best interests at heart.
             </p>
-            {/* <button
-              style={{
-                backgroundColor: "#ae5bff",
-                border: "none",
-                padding: "0.5rem 1.5rem",
-                fontSize: "1rem",
-                borderRadius: "30px",
-              }}
-            >
-              Connect Wallet
-            </button> */}
-          
+            <p className="lead">
+              Come join us in reinventing the gaming experience, where passion, skill, and technology come together to create a vibrant community that redefines the way we play and earn.
+            </p>
           </div>
         </div>
       </div>
-
-      {/* Custom Animations */}
-      <style type="text/css">
-        {`
-          @keyframes spin {
-            from {
-              transform: rotate(0deg);
-            }
-            to {
-              transform: rotate(360deg);
-            }
-          }
-          @keyframes spin-reverse {
-            from {
-              transform: rotate(360deg);
-            }
-            to {
-              transform: rotate(0deg);
-            }
-          }
-        `}
-      </style>
     </div>
   );
 };
 
 export default ChooseUs;
+
