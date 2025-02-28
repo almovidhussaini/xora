@@ -13,7 +13,8 @@ position: relative;
 display: inline-block;
 border-radius: 42px; /* Ensures the border follows input shape */
 padding: 2px; /* Controls border thickness */
-margin-right: 0.2rem;
+margin-right: 2rem;
+width: 100%;
 }
 
 .gradient-border-input::before {
@@ -46,38 +47,7 @@ color: #B7D869 !important;
 appearance: none;
 caret-color: #B7D869; /* Keeps cursor visible */
 }
-.xoraspan {
-margin-right: 2rem;
-}
-.gradient-border-input-xora input {
-display: block;
-width: 100%;
-padding: 10px 15px;
-border: none;
-outline: none;
-border-radius: 0px !important;
-color: #B7D869 !important;
-background-color: transparent !important;
-border-bottom: 2px solid white; 
-appearance: none;
-caret-color: #B7D869;
-}
 
 
 
-.gradient-border-input input:-webkit-autofill,
-.gradient-border-input input:-webkit-autofill:hover,
-.gradient-border-input input:-webkit-autofill:focus,
-.gradient-border-input input:-webkit-autofill:active {
--webkit-box-shadow: 0 0 0px 1000px #080B2A inset !important;
-box-shadow: 0 0 0px 1000px #080B2A inset !important;
-background-color: #080B2A !important;
-color: #B7D869 !important;
-}
 
-/* Prevent focus from changing background */
-.gradient-border-input input:focus {
-background-color: #080B2A !important;
-color: #B7D869 !important;
-box-shadow: none !important;
-}
