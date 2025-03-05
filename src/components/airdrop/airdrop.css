@@ -1,0 +1,32 @@
+.airdrop-container{
+    background-image: '../../assets/airdrop.svg';
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 400px;
+  z-index: 100;
+}
+
+@media (max-width: 1000px) { /* Tablets & smaller */
+    .marblemaster-img {
+      width: 120px !important;  /* Decrease width */
+      
+    }
+  }
+  
+
+@media (max-width: 768px) { /* Tablets & smaller */
+    .marblemaster-img {
+      width: 100px !important;  /* Decrease width */
+      
+    }
+  }
+  
+  @media (max-width: 480px) { /* Mobile devices */
+    .marblemaster-img {
+      width: 80px !important;   /* Even smaller on mobile */
+      
+    }
+  }
+  

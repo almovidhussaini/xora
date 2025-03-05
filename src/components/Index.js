@@ -6,6 +6,9 @@ import React from 'react';
 import Creator from './Creator/Creator';
 import Roadmap from './roadmap/Roadmap';
 import SuperXoraPage from  './superxora/SuperXoraPage';
+import Airdrop from './airdrop/Airdrop';
+import Faq from './faq/Faq';
+
 const Index = () => {
     return (
         <>
@@ -15,6 +18,8 @@ const Index = () => {
      <Ico/>
      <Stake/>
      <Roadmap/>
+     <Airdrop/>
+     <Faq/>
      <Creator/>
         </>
     );
