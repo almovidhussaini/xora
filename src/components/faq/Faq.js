@@ -27,7 +27,7 @@ const Faq = () => {
       };
 
     return (
-        <div style={{ backgroundColor: "#080B2A" , padding:'7rem 0 0 0'}}>
+        <div style={{ backgroundColor: "#080B2A" , padding:'7rem 0 0 0'}} id='faq'>
            <h1 className='text-white text-center'>FAQ</h1>
            <p className='text-white text-center mb-5'>The largest and unique Super rare Xora marketplace For crypto-collectibles </p>
 

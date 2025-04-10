@@ -13,6 +13,9 @@
       width: 120px !important;  /* Decrease width */
       
     }
+    .modal-image{
+      width: 15rem !important; 
+    }
   }
   
 
@@ -21,12 +24,18 @@
       width: 100px !important;  /* Decrease width */
       
     }
+    .modal-image{
+      width: 13rem !important; 
+    }
   }
   
   @media (max-width: 480px) { /* Mobile devices */
     .marblemaster-img {
       width: 80px !important;   /* Even smaller on mobile */
       
+    }
+    .modal-image{
+      width: 10rem !important; 
     }
   }
   

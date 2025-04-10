@@ -93,11 +93,16 @@ const Navbar = () => {
                 Roadmap
               </a>
             </li>
-            {/* <li className="nav-item" style={{ marginRight: "3rem" }}>
-              <a className="nav-link text-white" href="#">
+            <li className="nav-item" style={{ marginRight: "3rem" }}>
+              <a className="nav-link text-white" href="#game">
+                Games
+              </a>
+            </li>
+            <li className="nav-item" style={{ marginRight: "3rem" }}>
+              <a className="nav-link text-white" href="#faq">
                 FAQ
               </a>
-            </li> */}
+            </li>
             {/* <li className="nav-item">
               <a className="nav-link text-white" href="#">
                 Contact Us

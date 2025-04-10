@@ -249,7 +249,7 @@ const Ico = () => {
               className="card h-100 gradient-border-input"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.05)",
-               
+                borderRadius:'42px'
                 
               }}
             >
@@ -259,20 +259,6 @@ const Ico = () => {
 
                 <div className="mb-3">
                   <div className="d-flex align-items-center">
-                    {/* <input
-                      type="text"
-                      className="form-control flex-grow-1 me-2"
-                      placeholder="0.0000"
-                      value={buyAmount}
-                      onChange={(e) => setBuyAmount(e.target.value)}
-                      style={{ 
-                        backgroundColor: '#0E1138', 
-                        color: 'white',
-                        border: 'none',
-                        height: '40px',
-                       
-                      }}
-                    /> */}
                     <div className="gradient-border-input">
                       <input
                         type="text"
@@ -340,8 +326,7 @@ const Ico = () => {
               className="card h-100 gradient-border-input"
               style={{
                 backgroundColor: "rgba(255, 255, 255, 0.05)",
-               
-                
+               borderRadius:'42px'
               }}
             >
               <div className="card-body p-4">
