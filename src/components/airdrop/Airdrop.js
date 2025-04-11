@@ -222,7 +222,7 @@ const GameModal = ({ game, onClose }) => {
                 borderRadius: "10px",
                 cursor: "pointer",
                 backdropFilter: "blur(10px)",
-                width: "fit-content",
+                width: "14rem",
               }}
             >
               Play Game on iOS
@@ -237,12 +237,13 @@ const GameModal = ({ game, onClose }) => {
                 borderRadius: "10px",
                 cursor: "pointer",
                 backdropFilter: "blur(10px)",
-                width: "fit-content",
+                width: "14rem",
               }}
             >
               Play Game on Android
             </button>
           </div>
+
         </div>
       </div>
     </div>
@@ -356,7 +357,7 @@ const Airdrop = () => {
         />
       </div>
 
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center" id="download">
         <div
           style={{
             width: "70%",
@@ -378,7 +379,48 @@ const Airdrop = () => {
             in-game tokens, skinsm and perks, Don't miss out--play more, earn
             more!
           </p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              width: "100%",
+              gap: "1rem",
+            }}
+            
+          >
+            <button
+              style={{
+                background:
+                  "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
+                color: "white",
+                border: "none",
+                padding: "10px 20px",
+                borderRadius: "10px",
+                cursor: "pointer",
+                backdropFilter: "blur(10px)",
+                width: "14rem",
+              }}
+            >
+              Play Game on iOS
+            </button>
+            <button
+              style={{
+                background:
+                  "linear-gradient(to right, #6F5CEA, #AE5BFF, #F2946D)",
+                color: "white",
+                border: "1px solid rgba(255, 255, 255, 0.2)",
+                padding: "10px 20px",
+                borderRadius: "10px",
+                cursor: "pointer",
+                backdropFilter: "blur(10px)",
+                width: "14rem",
+              }}
+            >
+              Play Game on Android
+            </button>
+          </div>
         </div>
+        
       </div>
 
       {selectedGame && (

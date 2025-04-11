@@ -1,0 +1,23 @@
+.whitepaper-img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  }
+
+  .whitepaper-container {
+    gap: 10rem;
+  }
+  
+  @media (max-width: 768px) {
+    .whitepaper-img {
+      max-width: 90%;
+    }
+  
+    .whitepaper-container {
+      text-align: center;
+      gap: 5rem
+    }
+  }
+  

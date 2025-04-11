@@ -5,20 +5,24 @@ const Faq = () => {
 
     const faqs = [
         {
-          question: 'What is Xora?',
-          answer: 'Xora is a secure and user-friendly BTC staking platform that allows users to earn rewards by staking their Bitcoin. By holding and staking BTC on Xora, users can passively grow their crypto holdings with competitive returns.'
+          question: 'What is XORA and why should I care?',
+          answer: 'XORA is a gaming token that rewards players for winning and participating in fun, skill-based games. Whether you are a casual gamer or a competitive one, you can earn real value just by playing.'
         },
         {
-          question: 'How does BTC staking work on Xora?',
-          answer: 'Detailed explanation of how BTC staking works on the Xora platform.'
+          question: ' How do I take part in the ICO?',
+          answer: 'You can join the ICO by visiting our official website, connecting your crypto wallet, and purchasing XORA tokens using ETH or USDT. Early buyers get more bonus tokens, so the earlier you join, the better.'
         },
         {
-          question: 'Who can use Xora?',
-          answer: 'Information about who is eligible to use the Xora platform.'
+          question: 'What makes XORA different from other game projects?',
+          answer: 'XORA combines addictive mobile games, real rewards, a deflationary token model (tokens get burned when airdrop token sell), and a long-term vision that supports both players and investors.'
         },
         {
-          question: 'How do I start staking BTC on Xora?',
-          answer: 'Step-by-step guide on how to begin staking Bitcoin on Xora.'
+          question: ' Will I be able to use the tokens in the games?',
+          answer: 'Yes! You can use XORA tokens to join exclusive tournaments, unlock upgrades, access premium features, and even stake them for extra rewards.'
+        },
+        {
+          question: 'Is XORA safe and secure?',
+          answer: 'Absolutely. All smart contracts are audited, your tokens are held securely, and the platform is built with full transparency. We’re committed to earning your trust and growing the community long-term.'
         }
       ];
 

@@ -8,6 +8,7 @@ import Roadmap from './roadmap/Roadmap';
 import SuperXoraPage from  './superxora/SuperXoraPage';
 import Airdrop from './airdrop/Airdrop';
 import Faq from './faq/Faq';
+import Whitepaper from './whitepaper/Whitepaper';
 
 const Index = () => {
     return (
@@ -19,6 +20,7 @@ const Index = () => {
      <Stake/>
      <Roadmap/>
      <Airdrop/>
+     <Whitepaper/>
      <Faq/>
      <Creator/>
         </>

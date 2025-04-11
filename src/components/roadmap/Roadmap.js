@@ -23,7 +23,7 @@ const Roadmap = () => {
     draggable="false"
     onSelectCapture={(e) => e.preventDefault()}
     onSelect={(e) => e.stopPropagation()}
-    style={{ width: "90%", height: "auto", objectFit: "contain",userSelect: "none",pointerEvents: "none" }}
+    style={{ width: "100%", height: "auto", objectFit: "contain",userSelect: "none",pointerEvents: "none" }}
   />
   
   
